@@ -27,7 +27,7 @@ public class ServicioSocio {
 		return repository.findAll();
 	}
 	
-	public List<Socio> buscarPorDisponible(boolean activo){
+	public List<Socio> buscarPorEstado(boolean activo){
 		return repository.findByActivo(activo);
 	}
 	
