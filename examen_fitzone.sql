@@ -1,1 +1,10 @@
 --EXAMÉN BASE DE DATOS
+
+CREATE TABLE socios(
+	id_socio INT PRIMARY KEY,
+	nombres VARCHAR(50) NOT NULL,
+	apellidos VARCHAR(50) NOT NULL,
+	edad INT NOT NULL,
+	fecha_registro VARCHAR(10) NOT NULL,
+	activo BOOLEAN NOT NULL
+);
