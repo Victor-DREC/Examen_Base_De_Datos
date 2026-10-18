@@ -20,3 +20,12 @@ VALUES
 SELECT nombres, apellidos, edad FROM socios WHERE activo = TRUE AND edad > 18;
 SELECT * FROM socios WHERE fecha_registro = '2026-02-01';
 SELECT * FROM socios ORDER BY edad DESC; 
+
+ALTER TABLE socios ADD COLUMN email VARCHAR(100);
+UPDATE socios SET email = 'mariagomez@email.com' WHERE id_socio = 1;
+UPDATE socios SET email = 'carlosmendoza@email.com' WHERE id_socio = 2;
+UPDATE socios SET email = 'anatorres@email.com' WHERE id_socio = 3;
+UPDATE socios SET email = 'jorgeespinoza@email.com' WHERE id_socio = 4;
+UPDATE socios SET email = 'sofiavargas@email.com' WHERE id_socio = 5;
+
+SELECT * FROM socios;
