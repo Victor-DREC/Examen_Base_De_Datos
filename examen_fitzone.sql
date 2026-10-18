@@ -16,3 +16,7 @@ VALUES
 (3, 'Ana Lucía', 'Torres Paredes', 19, '2024-02-20', FALSE),
 (4, 'Jorge Luis', 'Espinoza Castillo', 62, '2021-08-12', TRUE),
 (5, 'Sofia Isabel', 'Vargas Delgado', 34, '2023-09-05', FALSE);
+
+SELECT nombres, apellidos, edad FROM socios WHERE activo = TRUE AND edad > 18;
+SELECT * FROM socios WHERE fecha_registro = '2026-02-01';
+SELECT * FROM socios ORDER BY edad DESC; 
